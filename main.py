@@ -3,6 +3,8 @@
 import pygame
 import sys
 import config  # Import the config module
+import random
+import shapes
 
 def init_game():
     pygame.init()
