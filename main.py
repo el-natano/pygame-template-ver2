@@ -33,6 +33,7 @@ def main():
         running = handle_events()
         screen.fill(config.WHITE)  # Use color from config
         
+    
     shape_type = random.randrange(3)
     
     if shape_type == 0:
