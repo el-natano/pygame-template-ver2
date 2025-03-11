@@ -11,5 +11,8 @@ def draw_circle(screen, shape):
 def draw_rect(screen,shape):
     pygame.draw.rect(screen, shape['color'], (shape['position'][0], shape['position'][1], shape['width'], shape['height']))
 
-def draw_line (screen, shape):
+def draw_line (screen, color, shape_width, start, end):
     pygame.draw.line(screen, shape['color'], shape['start_pos'], shape['end_pos'], shape['width'])
+
+def polygon(screen, color, positionlist):
+    pygame.draw.polygon(screen, color, positionlist)
