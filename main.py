@@ -2,13 +2,13 @@
 
 import pygame
 import sys
-import config  # Import the config module
+import config  
 import random
 import shapes
 
 def init_game():
     pygame.init()
-    screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT))  # Use constants from config
+    screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT))  
     pygame.display.set_caption(config.TITLE)
     return screen
 
@@ -24,14 +24,14 @@ def handle_events():
 def main():
 
     screen = init_game()
-    clock = pygame.time.Clock() # Initialize the clock object
+    clock = pygame.time.Clock() 
     
     shapes_list = []
 
     running = True
     while running:
         running = handle_events()
-        screen.fill(config.WHITE)  # Use color from config
+        screen.fill(config.WHITE)  
         
     
     shape_type = random.randrange(3)
@@ -73,7 +73,7 @@ def main():
         
         pygame.display.flip()
 
-        # Limit frame rate to certain number of frames per second (FPS)
+        
         clock.tick(config.FPS)
 
     pygame.quit()
