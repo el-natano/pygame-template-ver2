@@ -26,7 +26,6 @@ def main():
     screen = init_game()
     clock = pygame.time.Clock() 
     
-    shapes_list = []
 
     running = True
     while running:
@@ -34,46 +33,8 @@ def main():
         screen.fill(config.WHITE)  
         
     
-    # shape_type = random.randrange(3)
-    
-    # if shape_type == 0:
-    #     new_shape = {
-    #         'type': 'circle',
-    #         'color':(random.randrange(255), random.randrange(255), random.randrange(255)),
-    #         'position': (random.randrange(config.WINDOW_WIDTH), random.randrange(config.WINDOW_HEIGHT)),
-    #         'radius':50
-    #     }
-    # elif shape_type == 1:
-    #     new_shape = {
-    #         'type': 'rectangle',
-    #         'color': (random.randrange(255), random.randrange(255), random.randrange(255)),
-    #         'position': (random.randrange(config.WINDOW_WIDTH - 100), random.randrange(config.WINDOW_HEIGHT - 100)),
-    #         'width': 100,
-    #         'height':10
-    #     }
-    # elif shape_type == 2:
-    #     new_shape = {
-    #         'type': 'line',
-    #         'color': (random.randrange(255), random.randrange(255), random.randrange(255)),
-    #         'start_pos': (random.randrange(config.WINDOW_WIDTH), random.randrange(config.WINDOW_HEIGHT)),
-    #         'width': 10
-    #     }
-
-    # shapes_list.append(new_shape)
-
-    # for shape in shapes_list:
-    #     if shape['type'] == 'circle':
-    #         shapes.draw_circle(screen,shape)
-    #     elif shape['type'] == 'rectangle':
-    #         shapes.draw_rect(screen,shape)
-    #     elif shape['type'] == 'line':
-    #         shapes.draw_line(screen,shape)
-
-
-        
         pygame.display.flip()
 
-        
         clock.tick(config.FPS)
 
     pygame.quit()
